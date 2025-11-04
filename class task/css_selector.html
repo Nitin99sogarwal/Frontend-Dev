@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice</title>
+  <style>
+    p {
+      color: darkblue;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    #main-title {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    a[target="_blank"] {
+      color: red;
+      text-decoration: underline;
+    }
+
+    ul.menu li {
+      font-weight: bold;
+    }
+
+    div > p {
+      border: 1px solid gray;
+      padding: 5px;
+    }
+
+    h2 + p {
+      font-style: italic;
+    }
+
+    /* General sibling combinator: targets all <p> siblings after <h3> */
+    h3 ~ p {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title">CSS Selectors Practice Page</h1>
+  </header>
+
+  <section>
+    <h2>Element Selector</h2>
+    <p>This paragraph is styled using the element selector.</p>
+
+    <h2>Class Selector</h2>
+    <p class="highlight">This paragraph uses the "highlight" class.</p>
+
+    <h2>ID Selector</h2>
+    <p id="unique-paragraph">This paragraph could be styled with an ID selector.</p>
+
+    <h2>Attribute Selector</h2>
+    <a href="https://example.com" target="_blank">External Link</a>
+    <a href="https://example.com">Regular Link</a>
+
+    <h2>Descendant Combinator</h2>
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <h2>Child Combinator</h2>
+    <div>
+      <p>This is a direct child paragraph inside a div.</p>
+      <span><p>This paragraph is nested deeper and won't be selected.</p></span>
+    </div>
+
+    <h2>Adjacent Sibling Combinator</h2>
+    <h2>Heading</h2>
+    <p>This paragraph directly follows an h2.</p>
+
+    <h2>General Sibling Combinator</h2>
+    <h3>Subheading</h3>
+    <p>This paragraph is a general sibling of h3.</p>
+    <p>Another sibling paragraph.</p>
+  </section>
+
+  <footer>
+    <p>Practice page created for CSS selector demonstration.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Action Pseudo-Classes Example</title>
+    <style>
+        a:hover {
+            margin: 10px;   
+            color: red;
+        }
+        input:focus {
+
+            border-color: blue;
+            background: lightyellow;
+            border-width: 3px;
+        }
+        button:active {
+            background-color: darkgreen ;
+            color: blue;
+        }
+        li:nth-child(2) {
+            color: green;
+        }
+        body{
+
+            background-color: lightgray
+            border: 5px solid black;
+            border-radius: 8px;
+        }
+    </style>
+    </head>
+
+    <body>
+        
+      <a href="https://leetcode.com/">leetcode</a>
+      <br/>
+      <input type="text" />
+      <br/>
+      <button>click me</button>
+      <br/>
+      <ul>
+        <li>Item 1 </li>
+        <li>Item 2 </li>
+        <li>Item 3 </li>    
+      </ul>
+      <br/>
+    </body>
+</html>
